@@ -1,0 +1,332 @@
+@import url('reset.css');
+
+body{
+	font-family: Arial;
+	font-size: 14px;
+	background-color: rgb(194, 214, 250);
+	line-height: 1.6;
+	
+}
+
+a{
+	text-decoration: none;
+}
+
+
+.wrapper{
+	max-width: 1200px;
+	
+	margin: 0 auto;
+	
+}
+
+/*------------- 天長條 --------------*/
+.top{
+	background-color: #000;
+	height: 70px;
+	display: flex;
+	justify-content: SPACE-BETWEEN;
+	margin-bottom: 50px;
+
+	position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+
+
+.top img{
+	width: 70px;
+	float: left;
+
+	margin-top: 4px;
+	margin-left: 16px;
+}
+.top h2{
+	font-size: 48px;
+	color: wheat;
+	text-align: center;
+	padding-left: 135px;
+}
+
+.top ul{
+	float: right;
+	margin-right: -11px;
+
+}
+
+.top li{
+	float: left;
+	margin-left: 10px;
+}
+
+.top li a{
+	color: white;
+	display: block;
+	line-height: 70px;
+	padding: 0 20px;
+	font-size: 24px;
+}
+
+.top li a:hover{
+	color: #ff8b38;}
+
+
+/*------------- 主視覺大圖 --------------*/
+.swiper {
+	width:800px;
+	height:800px;
+	margin-top:  80px;
+	
+  }
+
+  .swiper-slide img{
+	width: 100%;
+}
+
+
+/* --------------商品圖----------- */
+
+
+.header{
+	
+	background-color: #fff;
+	margin: 50px auto;
+	padding: 50px;
+	overflow: hidden;
+	
+}
+
+.header img{
+	margin: 20px;
+
+	height: 300px;
+	width: 300px;
+
+	
+}
+
+.header p{
+	text-align: center;
+	/* width: 300px; */
+	font-size: 20px;
+	
+}
+
+
+.header ul{
+	padding-left: 218px;
+}
+
+.header li{
+	float: left;
+	width: 350px;
+	transition: all 1s;
+	position: relative;
+	
+}
+.header li:hover{
+/* background-color: #ff8b38; */
+transform: scale(1.2,1.2);
+	
+	z-index: 10;
+	
+}
+
+/* .header li:nth-child(5):hover{
+	background-color: aqua;
+}
+
+.header li:nth-child(6):hover{
+	background-color: aqua;
+} */
+
+
+
+.header h3{
+	text-align: center;
+	color: violet;
+	font-size: 24px;
+}
+
+.header h4{
+	text-align: center;
+	color: blue;
+	font-size: 22px;
+}
+
+
+.header p{
+	color: #000;
+}
+
+
+
+
+/* -----------------連結------------------------*/
+
+.socialMedia{
+	background-color: rgb(235, 193, 193);
+	height: 150px;
+	
+}
+
+.socialMedia h2{
+	float: left;
+	font-size: 41px;
+	color: darkorange;
+	padding: 10px;
+}
+
+
+
+.socialMedia ul{
+	float: right;
+	padding-top: 10px;
+	padding-right: 20px;
+}
+
+.socialMedia li{
+	float: left;
+	margin-left: 50px;
+}
+
+
+
+.socialMedia a{
+	display: block;
+	width: 120px;
+	height:120px;
+	background-image: url(../img/css_sprites.png);
+}
+
+
+
+.socialMedia .media1 a{ background-position: -8px -16px; }
+.socialMedia .media2 a{ background-position: -520px -28px; }
+.socialMedia .media3 a{ background-position: 484px -22px; }
+.socialMedia .media4 a{background-position: -359px -28px;}
+
+.socialMedia p{
+	padding-top: 121px;
+	padding-left: 30px;
+}
+
+/* .socialMedia .media1 a:hover{ background-position: -50px 0; }
+.socialMedia .media2 a:hover{ background-position: -50px -50px; }
+.socialMedia .media3 a:hover{ background-position: -50px -100px; }
+.socialMedia .media4 a:hover{ background-position: -50px -150px; } */
+.block1{
+
+}
+.map{
+	
+	width: 50%;
+	padding-top: 10px;
+	width: calc(50% - 5px);
+
+	position: relative;
+
+	opacity: 0;
+}
+
+
+
+
+
+.p {
+	float: left;
+	line-height: 40px;
+	
+}
+
+ .phone{
+	
+	font-size: 22px;
+}
+
+
+
+.pic{
+	
+display: block;
+	float:right;
+	margin-top: 10px;
+	width: calc(50% - 5px);
+	position: relative;
+	
+	opacity: 0;
+}
+
+.movie{
+	
+	padding-top: 60px;
+	
+	
+	opacity: 0;
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 953px) {
+	
+	.wrapper{
+		width: 100%;
+	}
+.socialMedia{
+	height: 350px;
+}
+	
+.socialMedia ul{
+	float: right;
+	/* flex-wrap: wrap; */
+}
+
+.header img{
+	width: 600px;
+	height: 600px;
+}
+
+
+
+
+.movie{
+    float: none;
+    width: 100%;
+    height: auto; /* 或者設成 0 */
+    margin-right: 0;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 66.66%;
+  }
+
+
+
+
+
+
+}
+
+
+
+
+
+
